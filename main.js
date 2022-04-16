@@ -23,7 +23,7 @@ const button = document.querySelector('#start-button');
 
 function receivedResponse(response) {
   const topLine = document.createElement('div');
-  topLine.innerText = 'Identifier: Color';
+  topLine.innerText = 'Color : Identifier';
   document.body.appendChild(topLine);
   response.forEach((el) => {
     const legend = document.createElement('div');

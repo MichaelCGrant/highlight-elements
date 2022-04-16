@@ -37,9 +37,9 @@ function toggleExtension() {
             "focused": true,
             "type": "popup", 
             "url": "index.html",
-            "left": 50,
-            "top": 50,
-            "width": 200,
+            "left": 1520,
+            "top": 1000,
+            "width": 400,
             "height": 600
         }, (window) => {windowID = window.id});
     } else {
@@ -50,8 +50,8 @@ function toggleExtension() {
 } 
 
 function openWindow(win) {
-    console.log(win.id);
-    console.log(windowID);
+    // console.log(win.id);
+    // console.log(windowID);
     if (win.id === windowID) {
         chrome.action.setIcon({"path": "assets/Highlighter-Blue-icon-css.png"});
         isActive = true;
@@ -59,8 +59,8 @@ function openWindow(win) {
 }
 
 function closeWindow(win) {
-    console.log(win);
-    console.log(windowID);
+    // console.log(win);
+    // console.log(windowID);
     if (win === windowID) {
         chrome.action.setIcon({"path": "assets/Highlighter-White-icon-css.png"});
         isActive = false;
