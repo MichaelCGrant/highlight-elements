@@ -1,0 +1,24 @@
+{
+  "name": "Highlight Elements",
+  "description": "Puts a border around all DOM elements and logs their information in the extention window.",
+  "version": "0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+      "24": "assets/Highlighter-Blue-icon-css.png",
+      "64": "assets/Highlighter-Blue-64-css.png"
+  },
+  "permissions": ["activeTab","storage", "tabs", "scripting"],
+  "action": {
+      "default_title": "Highlight DOM Elements",
+      "default_icon": "assets/Highlighter-Blue-icon-css.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
