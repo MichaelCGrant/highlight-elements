@@ -1,0 +1,17 @@
+Goals:
+
+extension that when activated you can click on an element on the page and it will create borders around elements
+
+borders around all elements being clicked through (bubble out)
+maybe automatically create divs for every element on the page in different colors, different border styles
+
+automatically set each element to a different color
+
+
+have a legend of what color goes to which, list ids, classes, parent/child nodes
+
+save what the original borders were for reverting
+
+on-hover highlight, highlight on legend, click to pin on legend
+
+'copy css' button
